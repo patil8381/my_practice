@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms </title> 
+    <style>
+        body{
+            background-color: rgb(241, 221, 132);
+            text-align: center;
+            font-family: cursive;
+            
+        }  
+
+        h1{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body> 
+    <H1>FORM CREATION</H1> 
+    <form>
+     <fieldset>
+            <legend>Personal Details</legend>
+            <Table>
+                <tr><td><label> Name: </label></td>> <td><input Type="text" name="name " placeholder="ex:Shubham Patil" size="15"  required maxlength="15"></td></tr>
+                <tr><td><label>Mob No.: </label></td><td> <input type="number" name="mob no." placeholder="ex:8819009448" size="15" maxlength="10"></td></tr>
+                <tr><td><Label>Email:</Label></td><td><input type="Email" name="email" placeholder="Ex:shubhampatil@gmail.com" size="15" required></td></tr>
+                <tr><td><label > password: </label></td><td><input type="password" name="pwd" size="15" placeholder="min 5 character " required></td></tr>
+                <tr><td><label >confirm  password: </label></td><td><input type="password" name="cpwd" size="15"placeholder="min 5 character " required></td></tr>
+                <tr><td><label > DOB: </label></td><td> <input type="date" size="15" name="DOB"></td></tr>
+                <tr><td><label > Gender: </label></td><td> <input type="radio" name="gender" value="M">Male
+                    <input type="radio" name="gender" value="F">Female
+                    <input type="radio" name="gender" value="C">Custom </td></tr>
+                <tr><td> <label >Select Country: </label></td><td><select NAME="Country">
+                    <option Value="INDIA">INDIA</option>
+                    <option Value="USA">USA </option>
+                    <option Value="JAPAN">JAPAN </option>
+                    <option Value="RUSSIA">RUSSIA </option>
+                    <option Value="KOREA">KOREA </option>
+                    <option Value="AUSTRALIA">AUSTRAILIA </option>
+                </select></td></tr>
+                <tr><td> <LABEL>upload pic:</LABEL></td><td><input type="file" name="pic" required> <br> </td></tr>
+                <tr><td> <input type="reset"></td></tr> 
+    
+            </Table>
+        </fieldset>
+        <fieldset> 
+            <LEGEND>COURSE DETAILS</LEGEND>
+            <table>
+                <tr><td><LABEL>COURSE</LABEL></td>  <td> <SELECT NAME="course">
+                    <option value="JFS">java full stack</option>
+                    <option value="PFS">python full stack </option>
+                    <option value="JS">javascruipt</option>
+                    <option value="DS">data science</option> 
+                </SELECT></td></tr>
+                <tr><td><label> Delivery Mode:</label></td>  <td><input type="checkbox" name="mode1" value="ON" >Online 
+                    <input type="checkbox" name="mode2" value="OFF" >Offline</td></tr>
+                <tr><td> <label>Comments:</label> </td>  <td><textarea name="comments" cols="50" rows="10"></textarea></td></tr>
+                <tr><td> <Input type="submit"></Input></td> </tr>
+            
+    
+            </table>
+          
+        </fieldset>
+        
+    </form>  
+    
+</body>
+</html>
